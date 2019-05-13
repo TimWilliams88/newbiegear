@@ -1,0 +1,133 @@
+
+
+
+body {
+  font-family: 'Thasadith', sans-serif;
+}
+
+header {
+  background-color: black;
+  color: #fff;
+  height: 90px;
+  background-color: rgba(0,0,0,1);
+  position: fixed;
+  width: 100%;
+}
+
+
+.header-logo {
+  float: left;
+  font-size: 36px;
+ padding: 20px 40px;
+ letter-spacing: 3px;
+ margin-top: 5px
+}
+
+.header-right {
+  padding: 36px 34px;
+  color: white;
+  display: inline-block;
+  float: right;
+  background-color: rgba(255, 255, 255, 0.3);
+  cursor: pointer;
+
+
+}
+
+.header-right:hover {
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+.header-right a {
+  line-height: center;
+  padding-left: 25px;
+  padding-right: 25px;
+  color: white;
+  display: block;
+  transition: all 0.5s;
+}
+
+.top-wrapper {
+  padding: 270px 0 270px 0;
+  background-image: url(http://localhost:8888/Office.jpg);
+  background-size: cover;
+  color: black;
+  text-align: center;
+  font-size: 30px;
+}
+
+.top-wrapper h1 {
+  opacity: 0.8;
+}
+
+.heading {
+  padding-top: 80px;
+  padding-bottom: 60px;
+  text-align: center;
+}
+
+.box-wrapper {
+  padding-bottom:40%;
+  padding-left: 5%;
+  padding-right: 5%;
+  background-color: #f7f7f7;
+  text-align: center;
+  }
+
+.box {
+  display: flex;
+  justify-content: space-between;
+}
+.box-icon {
+  flex: 1;
+  max-width: 30%;
+  position: relative;
+}
+
+.box-icon img {
+  position: relative;
+  height: 98%;
+  width: 98%;
+  opacity: 0.8;
+  border: solid #021a40;
+  cursor: pointer;
+  transition: opacity 0.25s, transform .25s, box-shadow .25s;
+}
+
+.box-icon img:hover {
+  opacity: 1.0;
+  transform: translateY(-3px);
+  box-shadow: -1px 5px 16px -5px black;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: grey;
+}
+
+.text {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.box-icon:hover .overlay {
+  opacity: 0.8;
+}
+
+
+.box-icon:hover .middle {
+  opacity: 1;
+}
